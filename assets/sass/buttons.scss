@@ -1,0 +1,95 @@
+.btn {
+  &--1 {
+    @include button-style(
+      $col-neutral-8, // color
+      $col-gradient, // background
+      18px, // font-size
+      800, // font-weight
+      12px 32px, // padding
+      3px solid transparent, // border
+      50px, // border-radius
+      none // box-shadow
+    );
+
+    &:hover {
+      border: 3px solid $col-neutral-1;
+    }
+    
+    &:focus,
+    &.active {
+      border: 3px solid #C0C0C0;
+    }
+
+    &:disabled,
+    .disabled {
+      background: $col-neutral-4;
+      border: 3px solid transparent;
+    }
+  }
+
+  &--2 {
+    @include button-style(
+      $col-neutral-8,
+      $col-neutral-7,
+      18px,
+      800,
+      12px 32px,
+      3px solid $col-neutral-8,
+      50px,
+      none
+    );
+
+    &:hover {
+      background: rgba(255, 168, 65, 0.35);
+      border: 3px solid $col-neutral-8;
+    }
+  
+    &:disabled,
+    .disabled {
+      border: 3px solid $col-neutral-4;
+    }
+
+  }
+  
+  &--3 {
+    @include button-style(
+      $col-primary-2,
+      transparent,
+      14px,
+      400,
+      12px 32px,
+      none,
+      0px,
+      none
+    );
+
+    &:hover {
+      text-decoration: underline;
+      color: $col-primary-2;
+    }
+
+    &:focus {
+      border: 1px solid $col-primary-4;
+    }
+  
+    &:disabled,
+    .disabled {
+      color: $col-neutral-4;
+    }
+  }
+
+}
+
+@media screen and (min-width: $bp-lg) {
+  .btn {
+    &--1 {
+      font-size: 20px;
+      padding: 16px 32px;
+    }
+
+    &--2 {
+      font-size: 20px;
+      padding: 16px 32px;
+    }
+  }
+}

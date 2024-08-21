@@ -1,0 +1,25 @@
+@mixin text-style($font-size, $line-height, $margin-bottom) {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin-bottom: $margin-bottom;
+}
+
+@mixin button-style(
+  $color,
+  $background-color,
+  $font-size,
+  $font-weight,
+  $padding,
+  $border,
+  $border-radius,
+  $box-shadow
+) {
+  color: $color;
+  background: $background-color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  padding: $padding;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}

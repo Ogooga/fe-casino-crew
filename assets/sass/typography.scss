@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+$ff-primary: "Manrope", sans-serif;
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  color: $col-neutral-8;
+}
+
+h1 {
+  @include text-style(24px, 28px, 24px);
+}
+h2 {
+  @include text-style(22px, 26px, 16px);
+}
+h3 {
+  @include text-style(20px, 24px, 16px);
+}
+h4 {
+  @include text-style(18px, 24px, 16px);
+}
+h5 {
+  @include text-style(14px, 20px, 8px);
+}
+p {
+  @include text-style(16px, 22px, 24px);
+}
+a {
+  color: $col-links-light;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 24px;
+  padding-left: 0px;
+  li {
+    position: relative;
+    font-size: 16px;
+    padding-left: 1.4em;
+    margin-bottom: 8px;
+  }
+  li:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    background: $col-primary-1;
+    border-radius: 20px;
+    background-size: cover;
+  }
+}
+ol {
+  list-style: none;
+  counter-reset: ol-counter;
+  margin-bottom: 32px;
+  padding-left: 0px;
+  li {
+    counter-increment: ol-counter;
+    display: flex;
+  }
+  li::before {
+    color: $col-primary-1;
+    content: counter(ol-counter);
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 0.5rem;
+    padding-right: 5px;
+  }
+  li::after {
+    margin-left: 10px;
+  }
+}
+
+.wp-table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  box-shadow: 2px 3px 5px 0px #00000024;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  width: 100%;
+  th,
+  td {
+    padding: 6px 64px 6px 16px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  th:nth-child(1) {
+    border-top-left-radius: 12px;
+  }
+  th:nth-last-child(1) {
+    border-top-right-radius: 12px;
+  }
+  thead {
+    background: #0d0803a6;
+    color: $col-neutral-7;
+    border-bottom: 1px solid $col-primary-1;
+  }
+  tbody {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    tr {
+      border-bottom: 1px solid $col-primary-1;
+    }
+    td {
+      font-weight: 500;
+    }
+    tr:nth-last-child(1) {
+      border-bottom: 0px;
+      td:nth-child(1) {
+        border-bottom-left-radius: 12px;
+      }
+      td:nth-last-child(1) {
+        border-bottom-right-radius: 12px;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #ffedd7;
+    }
+    tr:nth-child(odd) {
+      background-color: $col-neutral-7;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: $bp-lg) {
+  h1 {
+    @include text-style(48px, 52px, 24px);
+  }
+  h2 {
+    @include text-style(40px, 48px, 16px);
+  }
+  h3 {
+    @include text-style(32px, 40px, 16px);
+  }
+  h4 {
+    @include text-style(24px, 28px, 16px);
+  }
+  h5 {
+    @include text-style(20px, 24px, 12px);
+  }
+  h6 {
+    @include text-style(18px, 22px, 8px);
+  }
+  p {
+    @include text-style(18px, 24px, 16px);
+  }
+
+  ul,
+  ol {
+    margin-bottom: 24px;
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  table {
+    margin-bottom: 32px;
+
+    th,
+    td {
+      padding: 12px 64px 12px 16px;
+      font-size: 16px;
+    }
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+}
