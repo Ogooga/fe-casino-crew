@@ -231,9 +231,6 @@ body {
   font-family: "Manrope", sans-serif;
   background-color: #FFFFFF;
   overflow-x: hidden;
-}
-
-body {
   --sb-track-color: #E5E5E5;
   --sb-thumb-color: #ff9619;
   --sb-size: 6px;

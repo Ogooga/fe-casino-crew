@@ -8,16 +8,13 @@ body {
   font-family: $ff-primary;
   background-color: $col-neutral-7;
   overflow-x: hidden;
-}
 
-// Custom Scrollbar
-
-body {
   --sb-track-color: #E5E5E5;
   --sb-thumb-color: #ff9619;
   --sb-size: 6px;
 }
 
+// Custom Scrollbar
 ::-webkit-scrollbar {
   width: var(--sb-size);
   height: 7px;
