@@ -327,4 +327,135 @@ body {
     padding: 16px 32px;
   }
 }
+footer {
+  background-color: #0D0803;
+  color: #FFFFFF;
+  padding-top: 85px;
+  padding-bottom: 30px;
+  position: relative;
+  margin-top: 120px;
+  text-align: center;
+}
+footer p {
+  font-size: 14px;
+}
+footer .footer-logo-mobile {
+  position: absolute;
+  max-width: 341px;
+  top: -94px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+footer .newsletter-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+footer .btn.btn--1 {
+  width: 100%;
+}
+footer .footer-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+footer ul {
+  margin-bottom: 40px;
+}
+footer ul li::before {
+  content: none;
+}
+footer ul li {
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+footer ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .mobile-logo {
+  max-width: 133px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 13px;
+  margin-bottom: 24px;
+}
+.social-links .item {
+  background: linear-gradient(93.29deg, #FFA841 5.07%, #FF9619 100%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.copyright-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin-top: 160px;
+    padding-top: 160px;
+    padding-bottom: 40px;
+  }
+  .footer-logo-desktop {
+    position: absolute;
+    max-width: 607px;
+    top: -170px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    text-align: left;
+  }
+  footer .footer-logo {
+    max-width: 190px;
+  }
+  footer .newsletter-ctn .btn.btn--1 {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  footer .copyright-text {
+    text-align: right;
+  }
+  footer .social-links {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer .footer__gambling {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
