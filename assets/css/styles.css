@@ -233,6 +233,29 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  --sb-track-color: #E5E5E5;
+  --sb-thumb-color: #ff9619;
+  --sb-size: 6px;
+}
+
+::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+  height: 7px;
+}
+
 .btn--1 {
   color: #232323;
   background: linear-gradient(93.29deg, #FFA841 5.07%, #FF9619 100%);
