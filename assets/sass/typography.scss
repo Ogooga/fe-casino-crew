@@ -30,6 +30,9 @@ h4 {
   @include text-style(18px, 24px, 16px);
 }
 h5 {
+  @include text-style(16px, 22px, 12px);
+}
+h6 {
   @include text-style(14px, 20px, 8px);
 }
 p {
