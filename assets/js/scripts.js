@@ -28,9 +28,9 @@ $(document).ready(function () {
 
   // bottom nav popup animation
   function bottomNavAnimation() {
-    const ctn = $('.bottom-nav__msg');
+    const ctn = $(".bottom-nav__msg");
     const popup = ctn.find(".popup__ctn");
-  
+
     if (ctn.hasClass("moveup-anim")) {
       ctn.removeClass("moveup-anim");
       ctn.addClass("movedown-anim");
@@ -64,17 +64,20 @@ $(document).ready(function () {
   }
 
   function moveSearch() {
-    const search = $(".nav-menu__ctn .search-form");
+    const search = $(".search-form");
     const movingDest = $(".search-toggler__ctn");
-    const searchClone = search.detach();
+    let searchClone = search.detach();
 
     if (
       !search.parent().is(".search-toggler__ctn") &&
       $(window).width() > 992
     ) {
       searchClone.prependTo(movingDest);
+      searchClone.css("width", "300px");
     } else {
       searchClone.prependTo(".nav-menu__ctn");
+      searchClone.css("width", "100%");
+      searchClone.removeClass("slideSearch");
     }
   }
 
