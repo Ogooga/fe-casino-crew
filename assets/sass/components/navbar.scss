@@ -110,6 +110,7 @@
   width: 16px;
   height: 16px;
   position: relative;
+  cursor: pointer;
 }
 
 .hamburger .bar {
@@ -239,6 +240,7 @@
       }
 
       .search-toggler {
+        cursor: pointer;
         display: inline;
       }
 

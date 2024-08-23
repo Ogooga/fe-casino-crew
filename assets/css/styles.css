@@ -601,6 +601,7 @@ footer .mobile-logo {
   width: 16px;
   height: 16px;
   position: relative;
+  cursor: pointer;
 }
 
 .hamburger .bar {
@@ -736,6 +737,7 @@ footer .mobile-logo {
     fill: #FF9619;
   }
   .nav .nav__logo .search-toggler {
+    cursor: pointer;
     display: inline;
   }
   .nav .nav__logo .menu-toggler__ctn,
