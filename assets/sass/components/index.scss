@@ -1,0 +1,84 @@
+.slot-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+
+    width: 100%;
+    min-height: 114px;
+    height: 100%;
+
+    .slot-content {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        padding: 10px;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        text-align: center;
+
+        .slot-name,
+        .slot-provider {
+            color: $col-neutral-7;
+            text-decoration: none;
+            border: 0px;
+        }
+    
+    }
+}
+
+@media screen and (min-width: $bp-md) {
+    .slot-card {
+        min-height: 234px;
+
+        &:hover {
+            .slot-content {
+                display: flex;
+            }
+        }
+
+        .slot-content {
+            a {
+                text-decoration: none;
+            }
+
+            .slot-name {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 800;
+                margin-bottom: 8px;
+            }
+
+            .slot-provider {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                margin-bottom: 28px;
+            }
+
+            .btn.btn--2 {
+                background: transparent;
+                border-color: $col-neutral-7;
+                color: $col-neutral-7;
+                font-size: 15px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: $bp-xl) {
+    .slot-card {
+        .slot-content {
+            .btn.btn--2 {
+                padding: 12px 24px;
+            }
+        }
+    }
+}
