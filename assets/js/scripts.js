@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   // desktop open search bar
   $(".search-toggler__ctn").click(function () {
-    const search = $(".search-form");
+    const search = $(".nav .search-form");
 
     if ($(window).width() > 992) {
       search.addClass("slideSearch");
@@ -64,7 +64,7 @@ $(document).ready(function () {
   }
 
   function moveSearch() {
-    const search = $(".search-form");
+    const search = $(".nav .search-form");
     const movingDest = $(".search-toggler__ctn");
     let searchClone = search.detach();
 
@@ -87,4 +87,34 @@ $(document).ready(function () {
     moveSocials();
     moveSearch();
   });
+
+  function customDropdown() {
+    $(".custom-dropdown").click(function (event) {
+        event.stopPropagation();
+        $(this).find(".options-list").slideToggle();
+        $(this)
+            .find(".selected-option")
+            .toggleClass("selected-option-active");
+        $(this).find(".option-header").toggleClass("header-option-active");
+        $(this).find("svg").toggleClass("rotate");
+    });
+
+    $(".options-list").on("click", function (event) {
+        event.stopPropagation();
+    });
+
+    $("body").on("click", function () {
+        $(".options-list").slideUp();
+        $(".selected-option").removeClass("selected-option-active");
+        $(".option-header").removeClass("header-option-active");
+        $(".custom-dropdown").find("svg").removeClass("rotate");
+    });
+}
+customDropdown();
+
+  // filters toggle button
+  $('.filters-toggle').click(function () {
+    $('.filters').slideToggle();
+  });
 });
+

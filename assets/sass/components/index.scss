@@ -1,84 +1,124 @@
-.slot-card {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 12px;
+.filters-nav {
+    .search-form {
+        margin-bottom: 24px;
+        input[type="text"] {
+            border: 2px solid $col-primary-1;
+            border-radius: 50px;
+            height: 58px;
+        }
+        button {
+            top: 14px;
+            svg {
+                stroke: #0d0803;
+                fill: #0d0803;
+            }
+        }
+    }
 
-    width: 100%;
-    min-height: 114px;
-    height: 100%;
+    .filters-toggle {
+        cursor: pointer;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        border: 2px solid $col-primary-1;
+        border-radius: 50px;
 
-    .slot-content {
-        background: rgba(0, 0, 0, 0.8);
-        border-radius: 12px;
-        padding: 10px;
+        .label {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+}
+.filters {
+    display: none;
+    .filters-category-name {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        margin-bottom: 20px;
 
-        display: none;
+        .label {
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 24px;
+        }
+    }
+}
+
+.toc-ctn {
+    h5 {
+        text-align: center;
+    }
+    .toc {
+        display: flex;
+        gap: 12px;
+        padding-bottom: 12px;
+        overflow-x: auto;
+        .item {
+            background: $col-neutral-7;
+            box-shadow: 2px 3px 5px 0px #00000014;
+            border-radius: 23px;
+            cursor: pointer;
+            padding: 5px 16px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            min-width: max-content;
+        }
+    }
+}
+
+.categories-cards {
+    &.scroll {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        overflow-x: scroll;
+        width: 100%;
+        padding-bottom: 12px;
+        .item {
+            padding: 8px 40px;
+            min-width: max-content;
+        }
+    }
+    .item {
+        background: $col-neutral-7;
+        box-shadow: 0px 0px 25px 0px #0000000d;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 8px;
+        border-radius: 12px;
+        text-decoration: none;
 
-        width: 100%;
-        height: 100%;
-
-        text-align: center;
-
-        .slot-name,
-        .slot-provider {
-            color: $col-neutral-7;
-            text-decoration: none;
-            border: 0px;
+        svg {
+            margin-bottom: 4px;
         }
-    
+
+        .label {
+            color: $col-neutral-8;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+        }
     }
 }
 
 @media screen and (min-width: $bp-md) {
-    .slot-card {
-        min-height: 234px;
-
-        &:hover {
-            .slot-content {
-                display: flex;
+    .categories-cards {
+        &.scroll {
+            gap: 24px;
+            .item {
+                padding: 8px 64px;
             }
         }
-
-        .slot-content {
-            a {
-                text-decoration: none;
-            }
-
-            .slot-name {
-                font-size: 18px;
-                line-height: 22px;
-                font-weight: 800;
-                margin-bottom: 8px;
-            }
-
-            .slot-provider {
-                font-size: 14px;
-                line-height: 20px;
-                font-weight: 400;
-                margin-bottom: 28px;
-            }
-
-            .btn.btn--2 {
-                background: transparent;
-                border-color: $col-neutral-7;
-                color: $col-neutral-7;
-                font-size: 15px;
-            }
-
-        }
-    }
-}
-
-@media screen and (min-width: $bp-xl) {
-    .slot-card {
-        .slot-content {
-            .btn.btn--2 {
-                padding: 12px 24px;
-            }
+        .item {
+            font-size: 16px;
         }
     }
 }
