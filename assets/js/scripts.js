@@ -116,5 +116,18 @@ customDropdown();
   $('.filters-toggle').click(function () {
     $('.filters').slideToggle();
   });
+
+  // fade in animation when component is in viewport
+  $(window).scroll(function () {
+    const component = $(".casino-info__msg");
+    const componentTop = component.offset().top;
+    const componentBottom = componentTop + component.outerHeight();
+    const viewportTop = $(window).scrollTop();
+    const viewportBottom = viewportTop + $(window).height();
+
+    if (componentBottom > viewportTop && componentTop < viewportBottom) {
+      component.addClass("fade-in");
+    }
+  });
 });
 
