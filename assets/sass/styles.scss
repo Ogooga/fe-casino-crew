@@ -3,9 +3,14 @@
 @import "./typography.scss";
 @import "./globals.scss";
 @import "./buttons.scss";
+
+// components 
 @import "./components/index.scss";
 @import "./components/footer.scss";
 @import "./components/navbar.scss";
 @import "./components/bottom_nav.scss";
 @import "./components/dropdowns.scss";
 @import "./components/cards.scss";
+
+// blocks
+@import "./blocks/casino-info.scss";
