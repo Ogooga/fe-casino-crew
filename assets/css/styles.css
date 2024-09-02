@@ -1906,7 +1906,10 @@ footer .mobile-logo {
       flex-wrap: wrap;
   margin-bottom: 16px;
 }
-.author-meta .item {
+.author-meta .item,
+.author-meta a {
+  text-decoration: none;
+  color: #232323;
   margin-bottom: 2px;
   font-size: 11px;
   line-height: 16px;
@@ -1917,7 +1920,8 @@ footer .mobile-logo {
   .author-meta {
     margin-bottom: 32px;
   }
-  .author-meta .item {
+  .author-meta .item,
+  .author-meta a {
     font-size: 12px;
     line-height: 20px;
   }

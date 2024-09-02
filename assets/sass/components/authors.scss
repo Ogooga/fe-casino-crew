@@ -6,7 +6,10 @@
 
     margin-bottom: 16px;
 
-    .item {
+    .item,
+    a {
+        text-decoration: none;
+        color: $col-neutral-8;
         margin-bottom: 2px;
         font-size: 11px;
         line-height: 16px;
@@ -17,7 +20,8 @@
 @media screen and (min-width: $bp-lg) {
     .author-meta {
         margin-bottom: 32px;
-        .item {
+        .item,
+        a {
             font-size: 12px;
             line-height: 20px;
         }
