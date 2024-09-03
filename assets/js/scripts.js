@@ -119,7 +119,7 @@ customDropdown();
 
   // fade in animation when component is in viewport
   $(window).scroll(function () {
-    const component = $(".casino-info__msg");
+    const component = $(".show-to-scroll");
     const componentTop = component.offset().top;
     const componentBottom = componentTop + component.outerHeight();
     const viewportTop = $(window).scrollTop();

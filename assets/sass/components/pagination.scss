@@ -1,0 +1,29 @@
+.pagination {
+    margin-bottom: 32px;
+    justify-content: center;
+    li {
+        padding: 0px;
+        list-style: none;
+        &::before {
+            content: none;
+        }
+
+        .page-link {
+            border: 1px solid $col-primary-1;
+            color: $col-neutral-8;
+        }
+
+        &.active {
+            .page-link {
+                background: $col-neutral-8;
+                color: $col-neutral-7;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .pagination {
+        margin-bottom: 58px;
+    }
+}

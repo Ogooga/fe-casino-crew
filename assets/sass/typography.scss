@@ -6,33 +6,47 @@ $bp-sm: 576px;
 $bp-md: 768px;
 $bp-lg: 992px;
 $bp-xl: 1200px;
+$bp-xxl: 1400px;
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+ {
   font-weight: 800;
   color: $col-neutral-8;
 }
 
-h1 {
+h1,
+.h1 {
   @include text-style(24px, 28px, 24px);
 }
-h2 {
+h2,
+.h2 {
   @include text-style(22px, 26px, 16px);
 }
-h3 {
+h3,
+.h3 {
   @include text-style(20px, 24px, 16px);
 }
-h4 {
+h4,
+.h4 {
   @include text-style(18px, 24px, 16px);
 }
-h5 {
+h5,
+.h5 {
   @include text-style(16px, 22px, 12px);
 }
-h6 {
+h6,
+.h6 {
   @include text-style(14px, 20px, 8px);
 }
 p {
@@ -149,22 +163,28 @@ img {
 }
 
 @media screen and (min-width: $bp-lg) {
-  h1 {
+  h1,
+  .h1 {
     @include text-style(48px, 52px, 24px);
   }
-  h2 {
+  h2,
+  .h2 {
     @include text-style(40px, 48px, 16px);
   }
-  h3 {
+  h3,
+  .h3 {
     @include text-style(32px, 40px, 16px);
   }
-  h4 {
+  h4,
+  .h4 {
     @include text-style(24px, 28px, 16px);
   }
-  h5 {
+  h5,
+  .h5 {
     @include text-style(20px, 24px, 12px);
   }
-  h6 {
+  h6,
+  .h6 {
     @include text-style(18px, 22px, 8px);
   }
   p {
