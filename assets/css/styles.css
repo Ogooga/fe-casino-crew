@@ -2071,11 +2071,27 @@ footer .mobile-logo {
   background: #2E232D;
   padding: 32px 0px;
 }
+.about-info__ctn.icons-info .about-info {
+  padding-bottom: 24px;
+}
+.about-info__ctn.icons-info .about-info__tips {
+  max-width: none;
+}
 .about-info__ctn .border-wrap {
   border-radius: 24px;
   position: relative;
   background: linear-gradient(107.09deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 104.27%);
   padding: 3px;
+}
+.about-info__ctn.light {
+  background: #EFEFEF;
+}
+.about-info__ctn.light .about-info {
+  background: #FFFFFF;
+  color: #232323;
+}
+.about-info__ctn.light .about-info .h2 {
+  color: #232323;
 }
 .about-info__tips .item {
   margin-bottom: 32px;

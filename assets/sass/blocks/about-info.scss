@@ -15,6 +15,16 @@
     &__ctn {
         background: $col-neutral-10;
         padding: 32px 0px;
+
+        &.icons-info {
+            .about-info {
+                padding-bottom: 24px;
+            }
+            .about-info__tips {
+                max-width: none;
+            }
+        }
+
         .border-wrap {
             border-radius: 24px;
             position: relative;
@@ -24,6 +34,19 @@
                 rgba(255, 255, 255, 0) 104.27%
             );
             padding: 3px;
+        }
+
+        &.light {
+            background: $col-body;
+
+            .about-info {
+                background: $col-neutral-7;
+                color: $col-neutral-8;
+
+                .h2 {
+                    color: $col-neutral-8;
+                }
+            }
         }
     }
 
