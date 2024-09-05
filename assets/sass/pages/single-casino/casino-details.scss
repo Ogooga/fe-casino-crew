@@ -1,0 +1,103 @@
+.casino-details {
+    .card {
+        padding: 16px 24px 16px 24px;
+        background: $col-neutral-7;
+        box-shadow: 2px 3px 5px 0px #00000014;
+        border: 0px;
+        border-radius: 16px;
+        position: relative;
+        height: 100%;
+
+        .title {
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 20px;
+            margin-bottom: 16px;
+        }
+
+        .list {
+            &.item-border {
+                .item {
+                    border-bottom: 1px solid $col-primary-1;
+                    margin-bottom: 26px;
+                }
+            }
+
+            .item {
+                display: flex;
+                align-content: center;
+                margin-bottom: 8px;
+                justify-content: space-between;
+                padding-bottom: 4px;
+
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+
+                &:last-child {
+                    border-bottom: 0px;
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                }
+
+                div:last-child {
+                    text-align: right;
+                }
+            }
+        }
+
+        .show-all {
+            max-width: fit-content;
+            position: absolute;
+            right: 24px;
+        }
+
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+
+            img {
+                margin-bottom: 0px;
+            }
+        }
+
+        .grid-list {
+            .item-icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                text-align: center;
+
+                span {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $bp-xl) {
+    .casino-details {
+        .card {
+            padding: 24px;
+            
+            .title {
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 32px;
+            }
+
+            .list {
+                .item {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

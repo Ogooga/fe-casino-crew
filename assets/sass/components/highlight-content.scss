@@ -1,0 +1,12 @@
+.highlight-content {
+    border-radius: 16px;
+    padding: 24px 16px;
+    background: $col-neutral-7;
+}
+
+@media screen and (min-width: $bp-lg) {
+    .highlight-content {
+        padding: 48px 96px;
+        box-shadow: 2px 3px 5px 0px #00000014;
+    }
+}

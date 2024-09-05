@@ -4,6 +4,7 @@
 @import "./globals.scss";
 @import "./buttons.scss";
 @import "./animations.scss";
+@import "./utils.scss";
 
 // components
 @import "./components/index.scss";
@@ -14,7 +15,15 @@
 @import "./components/cards.scss";
 @import "./components/authors.scss";
 @import "./components/pagination.scss";
+@import "./components/steps.scss";
+@import "./components/highlight-content.scss";
 
 // blocks
 @import "./blocks/casino-info.scss";
 @import "./blocks/about-info.scss";
+
+// pages
+@import "./pages";
+
+// offers
+@import "./offers/style-1.scss";

@@ -119,15 +119,25 @@ customDropdown();
 
   // fade in animation when component is in viewport
   $(window).scroll(function () {
-    const component = $(".show-to-scroll");
-    const componentTop = component.offset().top;
-    const componentBottom = componentTop + component.outerHeight();
-    const viewportTop = $(window).scrollTop();
-    const viewportBottom = viewportTop + $(window).height();
+    $(".show-to-scroll").each(function () {
+      const component = $(this);
+      const componentTop = component.offset().top;
+      const componentBottom = componentTop + component.outerHeight();
+      const viewportTop = $(window).scrollTop();
+      const viewportBottom = viewportTop + $(window).height();
 
-    if (componentBottom > viewportTop && componentTop < viewportBottom) {
-      component.addClass("fade-in");
-    }
+      if (componentBottom > viewportTop && componentTop < viewportBottom) {
+        component.addClass("fade-in");
+      } else {
+        component.removeClass("fade-in");
+      }
+    });
   });
+
+  // offer 1 toggle hidden content
+  $(".toggle-offer-1-content").click(function () {
+    const parent = $(this).parent();
+    parent.find(".hidden-content").slideToggle();
+  })
 });
 

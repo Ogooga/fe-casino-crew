@@ -1,0 +1,41 @@
+.bg {
+    &--gray {
+        background: $col-neutral-6;
+        
+        &.offers {
+            padding: 24px 12px;
+        }
+    }
+}
+
+.c {
+    &--gray {
+        color: $col-neutral-6;
+    }
+}
+
+.offers-scroll {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    gap: 24px;
+
+    .single-offer-1 {
+        min-width: 336px;
+        max-width: 405px;
+    }
+}
+
+@media screen and (min-width: $bp-md) {
+    .bg {
+        &--gray {
+            &.offers {
+                display: flex;
+                overflow-x: auto;
+                padding: 32px 36px 12px 36px;
+                border-radius: 16px;
+            }
+        }
+    }
+}
