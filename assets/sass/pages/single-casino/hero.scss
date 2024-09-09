@@ -102,12 +102,6 @@
             gap: 4px;
             width: 100%;
             position: relative;
-
-            &:hover {
-                .card {
-                    display: block;
-                }
-            }
         }
 
         p,
@@ -120,6 +114,13 @@
         }
 
         .card {
+            svg {
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                cursor: pointer;
+            }
+
             display: none;
             position: absolute;
             z-index: 1000;
@@ -145,7 +146,15 @@
         .casino-disclosure {
             .disc {
                 width: fit-content;
+                &:hover {
+                    .card {
+                        display: block;
+                    }
+                }
                 .card {
+                    svg {
+                        display: none;
+                    }
                     min-width: 400px;
                     right: 0;
                 }

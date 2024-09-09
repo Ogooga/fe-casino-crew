@@ -139,5 +139,10 @@ customDropdown();
     const parent = $(this).parent();
     parent.find(".hidden-content").slideToggle();
   })
+
+  // toggle ad disclosure hidden content
+  $('.casino-disclosure .disc').click(function () {
+    $(this).find('.card').toggleClass('d-block');
+  })
 });
 
