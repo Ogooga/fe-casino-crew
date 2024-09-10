@@ -242,9 +242,28 @@
     }
 
     .hero-content {
-        h1,p {
+        h1,
+        p {
             text-align: center;
         }
+    }
+}
+
+.author-hero {
+    img {
+        margin-bottom: 58px;
+    }
+
+    .author-role {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 22px;
+        margin-bottom: 32px;
+        color: $col-neutral-9;
+    }
+
+    p {
+        text-align: left;
     }
 }
 

@@ -2531,6 +2531,7 @@ footer .mobile-logo {
 
 .character-info {
   margin-top: 140px;
+  margin-bottom: 100px !important;
 }
 .character-info__ctn {
   background-image: url("../images/slot-placeholder.png");
@@ -3013,8 +3014,23 @@ footer .mobile-logo {
   text-align: right;
   max-width: 130px;
 }
-.slot-hero .hero-content h1, .slot-hero .hero-content p {
+.slot-hero .hero-content h1,
+.slot-hero .hero-content p {
   text-align: center;
+}
+
+.author-hero img {
+  margin-bottom: 58px;
+}
+.author-hero .author-role {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  margin-bottom: 32px;
+  color: #909090;
+}
+.author-hero p {
+  text-align: left;
 }
 
 .inline-rating strong {
