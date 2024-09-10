@@ -238,6 +238,37 @@
 
 @media screen and (min-width: $bp-xl) {
     .author-card-full {
+        &.in-row {
+            padding: 17px;
+            .author-details {
+                flex-direction: row;
+                text-align: left;
+                margin-bottom: 16px;
+
+                .role {
+                    margin-bottom: 8px;
+                }
+            }
+
+            .author-desc {
+                margin-bottom: 16px;
+            }
+
+            .author-skills {
+                .h5 {
+                    margin-bottom: 8px;
+                    font-size: 16px;
+                }
+
+                .d-flex {
+                    strong {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
         padding-top: 24px;
         padding-bottom: 24px;
         .row {
