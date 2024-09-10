@@ -2915,6 +2915,7 @@ footer .mobile-logo {
 .slot-hero .slot-game .placeholder {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
