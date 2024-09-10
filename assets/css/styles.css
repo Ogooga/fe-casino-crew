@@ -2933,6 +2933,7 @@ footer .mobile-logo {
   position: relative;
 }
 .slot-hero .slot-game .placeholder .overlay {
+  cursor: auto;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   position: absolute;
