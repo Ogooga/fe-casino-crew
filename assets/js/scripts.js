@@ -179,4 +179,27 @@ $(document).ready(function () {
             toggleFAQSection($section);
         }
     );
+
+    // Open Single Slot Iframe
+    $('.open-slot').click(function () {
+        const slotUrl = $(this).attr("data-iframe");
+        const placeholderCtn = $(this).parent();
+        const parent = placeholderCtn.parent();
+        const iframeCtn = parent.find(".iframe");
+        const iframe = parent.find("iframe");
+
+        iframe.attr("src", slotUrl);
+        iframeCtn.addClass('d-block');
+    })
+
+
+    // Close Single Slot Iframe
+    $('.close-iframe').click(function () {
+        const iframeCtn = $(this).parent();
+        const iframe = iframeCtn.find("iframe");
+
+        iframe.attr("src", "");
+        iframeCtn.removeClass('d-block');
+        
+    })
 });

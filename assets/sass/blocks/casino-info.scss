@@ -1,7 +1,7 @@
 .casino-info {
     width: 100%;
     position: relative;
-
+    
     img {
         max-width: 56px;
         margin-bottom: 0px;
@@ -10,11 +10,12 @@
         right: -10px;
         z-index: 2;
     }
-
+    
     &__msg {
         background-color: $col-primary-4;
         border-radius: 16px;
         padding: 16px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
         &.show-to-scroll {
             opacity: 0;

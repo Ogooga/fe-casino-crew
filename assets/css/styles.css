@@ -2380,6 +2380,8 @@ footer .mobile-logo {
   background-color: #44172E;
   border-radius: 16px;
   padding: 16px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .casino-info__msg.show-to-scroll {
   opacity: 0;
@@ -2907,6 +2909,112 @@ footer .mobile-logo {
   margin-bottom: 8px;
 }
 
+.slot-hero .slot-game {
+  min-height: 209px;
+}
+.slot-hero .slot-game .placeholder {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  position: relative;
+}
+.slot-hero .slot-game .placeholder .overlay {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slot-hero .slot-game .btn.btn--2 {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  z-index: 2;
+}
+.slot-hero .slot-game,
+.slot-hero .placeholder,
+.slot-hero iframe {
+  width: 100%;
+  height: 100%;
+}
+.slot-hero .iframe {
+  display: none;
+  background-color: #232323;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  z-index: 1000;
+}
+.slot-hero .iframe span {
+  fill: #FF9619;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.slot-hero .iframe span svg {
+  width: 20px;
+  height: 20px;
+}
+.slot-hero .game-info {
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+  padding: 16px;
+  border: 0;
+  border-radius: 16px;
+  height: 100%;
+}
+.slot-hero .game-info .h4 {
+  text-align: center;
+}
+.slot-hero .game-info .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #FF9619;
+  padding-bottom: 5px;
+}
+.slot-hero .game-info .item:last-child {
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+.slot-hero .game-info .item span,
+.slot-hero .game-info .item strong {
+  font-size: 16px;
+  line-height: 22px;
+}
+.slot-hero .game-info .item strong {
+  text-align: right;
+  max-width: 130px;
+}
+.slot-hero .hero-content h1, .slot-hero .hero-content p {
+  text-align: center;
+}
+
 .inline-rating strong {
   font-size: 14px;
   font-weight: 800;
@@ -2928,6 +3036,14 @@ footer .mobile-logo {
   }
   .single-casino-hero .casino-disclosure .disc .card svg {
     display: none;
+  }
+  .slot-hero .slot-game {
+    min-height: 432px;
+  }
+  .slot-hero .slot-game .placeholder {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -3200,7 +3316,8 @@ footer .mobile-logo {
     line-height: 22px;
   }
 }
-.single-offer-1 {
+.single-offer-1,
+.single-offer-2 {
   height: auto;
   overflow: hidden;
   position: relative;
@@ -3221,16 +3338,19 @@ footer .mobile-logo {
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.0784313725);
           box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.0784313725);
 }
-.single-offer-1 .casino-logo {
+.single-offer-1 .casino-logo,
+.single-offer-2 .casino-logo {
   display: block;
   max-width: 152px;
   margin-bottom: 8px;
   margin: 0 auto;
 }
-.single-offer-1 .inline-rating {
+.single-offer-1 .inline-rating,
+.single-offer-2 .inline-rating {
   text-align: center;
 }
-.single-offer-1 .btn-review {
+.single-offer-1 .btn-review,
+.single-offer-2 .btn-review {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3244,38 +3364,45 @@ footer .mobile-logo {
   text-decoration: none;
   margin-bottom: 24px;
 }
-.single-offer-1 .offer-text {
+.single-offer-1 .offer-text,
+.single-offer-2 .offer-text {
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.1019607843);
           box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 16px;
-  border: 2px solid #FF9619;
+  border: 3px solid #FF9619;
   padding: 7px 36px;
   text-align: center;
   margin-bottom: 16px;
 }
-.single-offer-1 .offer-text p {
+.single-offer-1 .offer-text p,
+.single-offer-2 .offer-text p {
   margin-bottom: 0;
   font-size: 20px;
   font-weight: 800;
   line-height: 26px;
 }
-.single-offer-1 .offer-text p:last-child {
+.single-offer-1 .offer-text p:last-child,
+.single-offer-2 .offer-text p:last-child {
   font-size: 16px;
   line-height: 22px;
 }
-.single-offer-1 ul {
+.single-offer-1 ul,
+.single-offer-2 ul {
   margin-bottom: 16px;
 }
-.single-offer-1 ul li {
+.single-offer-1 ul li,
+.single-offer-2 ul li {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.single-offer-1 ul li:last-child {
+.single-offer-1 ul li:last-child,
+.single-offer-2 ul li:last-child {
   margin-bottom: 0px;
 }
-.single-offer-1 .btn.btn--1 {
+.single-offer-1 .btn.btn--1,
+.single-offer-2 .btn.btn--1 {
   padding: 12px 32px;
   font-size: 18px;
   line-height: 22px;
@@ -3286,7 +3413,8 @@ footer .mobile-logo {
   margin: 0 auto;
   margin-bottom: 16px;
 }
-.single-offer-1 .toggle-offer-1-content {
+.single-offer-1 .toggle-offer-1-content,
+.single-offer-2 .toggle-offer-1-content {
   cursor: pointer;
   font-size: 10px;
   font-weight: 800;
@@ -3294,15 +3422,18 @@ footer .mobile-logo {
   text-align: center;
   color: #C2570F;
 }
-.single-offer-1 .tag {
+.single-offer-1 .tag,
+.single-offer-2 .tag {
   position: absolute;
   top: 10px;
   left: -46px;
 }
-.single-offer-1 .hidden-content {
+.single-offer-1 .hidden-content,
+.single-offer-2 .hidden-content {
   display: none;
 }
-.single-offer-1 .hidden-content .title {
+.single-offer-1 .hidden-content .title,
+.single-offer-2 .hidden-content .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3314,13 +3445,15 @@ footer .mobile-logo {
           justify-content: space-between;
   margin-bottom: 16px;
 }
-.single-offer-1 .hidden-content .title p {
+.single-offer-1 .hidden-content .title p,
+.single-offer-2 .hidden-content .title p {
   margin-bottom: 0px;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
 }
-.single-offer-1 .hidden-content .grid-list {
+.single-offer-1 .hidden-content .grid-list,
+.single-offer-2 .hidden-content .grid-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
@@ -3328,10 +3461,12 @@ footer .mobile-logo {
   gap: 32px;
   margin-bottom: 16px;
 }
-.single-offer-1 .hidden-content .grid-list img {
+.single-offer-1 .hidden-content .grid-list img,
+.single-offer-2 .hidden-content .grid-list img {
   margin-bottom: 0px;
 }
-.single-offer-1 .hidden-content .grid-list .item-icon {
+.single-offer-1 .hidden-content .grid-list .item-icon,
+.single-offer-2 .hidden-content .grid-list .item-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3349,7 +3484,8 @@ footer .mobile-logo {
   color: #232323;
   text-decoration: none;
 }
-.single-offer-1 .hidden-content .grid-list .item-icon p {
+.single-offer-1 .hidden-content .grid-list .item-icon p,
+.single-offer-2 .hidden-content .grid-list .item-icon p {
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 700;
@@ -3376,5 +3512,47 @@ footer .mobile-logo {
 }
 .tag.orange {
   background: radial-gradient(39.63% 184.63% at 46.66% 29.05%, rgba(255, 150, 25, 0.74) 0%, #ff9619 100%);
+}
+
+.single-offer-2 {
+  margin-bottom: 24px;
+}
+.single-offer-2:last-child {
+  margin-bottom: 0px;
+}
+.single-offer-2 .casino-logo {
+  margin-bottom: 4px;
+}
+.single-offer-2 .toggle-offer-2-content {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: center;
+  color: #C2570F;
+}
+.single-offer-2 .toggle-offer-2-content svg {
+  position: relative;
+  top: -2px;
+  right: -2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .single-offer-2 .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .single-offer-2 .row .offer-text {
+    padding: 12px 22px;
+  }
+  .single-offer-2 .row .offer-text p:last-child {
+    font-size: 18px;
+  }
+  .single-offer-2 .row .btn-review,
+  .single-offer-2 .row .offer-text,
+  .single-offer-2 .row ul {
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

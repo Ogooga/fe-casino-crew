@@ -1,0 +1,47 @@
+.single-offer-2 {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    .casino-logo {
+        margin-bottom: 4px;
+    }
+
+    .toggle-offer-2-content {
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 20px;
+        text-align: center;
+        color: $col-links-light;
+        
+        svg {
+            position: relative;
+            top: -2px;
+            right: -2px;
+        }
+    }
+}
+
+@media screen and (min-width: $bp-xl) {
+    .single-offer-2 {
+        .row {
+            align-items: center;
+
+            .offer-text {
+                padding: 12px 22px;
+                p:last-child {
+                    font-size: 18px;
+                }
+            }
+
+            .btn-review,
+            .offer-text,
+            ul {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
