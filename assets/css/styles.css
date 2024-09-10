@@ -3318,6 +3318,11 @@ footer .mobile-logo {
     line-height: 22px;
   }
 }
+@media screen and (min-width: 992px) {
+  .go-to-homepage .btn.btn--2 {
+    min-width: 404px;
+  }
+}
 .single-offer-1,
 .single-offer-2 {
   height: auto;
@@ -3492,6 +3497,10 @@ footer .mobile-logo {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.single-offer-1 {
+  height: 100%;
 }
 
 .tag {
