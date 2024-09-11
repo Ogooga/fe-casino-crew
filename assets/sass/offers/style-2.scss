@@ -25,6 +25,16 @@
     }
 }
 
+@media screen and (min-width: $bp-lg) {
+    .single-offer-2 {
+        .col-lg-8 {
+            .grid-list {
+                grid-template-columns: repeat(auto-fill, 70px);;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: $bp-xl) {
     .single-offer-2 {
         .row {

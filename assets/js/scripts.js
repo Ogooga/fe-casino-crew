@@ -140,7 +140,21 @@ $(document).ready(function () {
     // offer 1 toggle hidden content
     $(".toggle-offer-1-content").click(function () {
         const parent = $(this).parent();
+        const svg = $(this).find("svg");
+
+        svg.toggleClass("rotate");
         parent.find(".hidden-content").slideToggle();
+    });
+
+    // offer 2 toggle hidden content
+    $(".toggle-offer-2-content").click(function () {
+        const btnParent = $(this).parent();
+        const row = btnParent.parent();
+        const offerCtn = row.parent();
+        const svg = $(this).find("svg");
+
+        svg.toggleClass("rotate");
+        offerCtn.find(".hidden-content").slideToggle();
     });
 
     // toggle ad disclosure hidden content
