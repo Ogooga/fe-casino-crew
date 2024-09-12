@@ -146,8 +146,8 @@ $(document).ready(function () {
         parent.find(".hidden-content").slideToggle();
     });
 
-    // offer 2 toggle hidden content
-    $(".toggle-offer-2-content").click(function () {
+    // offers toggle hidden content
+    function toggleOfferHiddenContent() {
         const btnParent = $(this).parent();
         const row = btnParent.parent();
         const offerCtn = row.parent();
@@ -155,7 +155,10 @@ $(document).ready(function () {
 
         svg.toggleClass("rotate");
         offerCtn.find(".hidden-content").slideToggle();
-    });
+    }
+
+    $(".toggle-offer-2-content").click(toggleOfferHiddenContent);
+    $(".toggle-offer-3-content").click(toggleOfferHiddenContent);
 
     // toggle ad disclosure hidden content
     $(".casino-disclosure .disc").click(function () {
@@ -195,7 +198,7 @@ $(document).ready(function () {
     );
 
     // Open Single Slot Iframe
-    $('.open-slot').click(function () {
+    $(".open-slot").click(function () {
         const slotUrl = $(this).attr("data-iframe");
         const placeholderCtn = $(this).parent();
         const parent = placeholderCtn.parent();
@@ -203,17 +206,28 @@ $(document).ready(function () {
         const iframe = parent.find("iframe");
 
         iframe.attr("src", slotUrl);
-        iframeCtn.addClass('d-block');
-    })
-
+        iframeCtn.addClass("d-block");
+    });
 
     // Close Single Slot Iframe
-    $('.close-iframe').click(function () {
+    $(".close-iframe").click(function () {
         const iframeCtn = $(this).parent();
         const iframe = iframeCtn.find("iframe");
 
         iframe.attr("src", "");
-        iframeCtn.removeClass('d-block');
-        
-    })
+        iframeCtn.removeClass("d-block");
+    });
+
+    // copy text
+    $(".copy-text").click(function () {
+        const textToCopy = $(".text-to-copy").text();
+        navigator.clipboard
+            .writeText(textToCopy)
+            .then(() => {
+                console.log("Text copied to clipboard");
+            })
+            .catch((error) => {
+                console.error("Failed to copy text to clipboard:", error);
+            });
+    });
 });

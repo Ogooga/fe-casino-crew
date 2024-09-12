@@ -1,5 +1,6 @@
 .single-offer-1,
-.single-offer-2 {
+.single-offer-2,
+.single-offer-3 {
     height: auto;
     overflow: hidden;
     position: relative;
@@ -84,23 +85,28 @@
         margin-bottom: 16px;
     }
 
-    .toggle-offer-1-content {
+    .toggle-offer-1-content,
+    .toggle-offer-3-content {
         cursor: pointer;
         font-size: 10px;
         font-weight: 800;
         line-height: 20px;
         text-align: center;
         color: $col-links-light;
+    
     }
-
+    
     .tag {
         position: absolute;
         top: 10px;
         left: -46px;
     }
-
+    
     .hidden-content {
         display: none;
+        border-top: 2px solid #FF96194D;
+        margin-top: 20px;
+        padding-top: 20px;
 
         .title {
             display: flex;

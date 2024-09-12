@@ -1,0 +1,169 @@
+.single-offer-3 {
+    margin-bottom: 24px;
+    
+    .casino-logo {
+        margin-bottom: 8px;
+    }
+    .offer-text {
+        border: 0;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+
+        p,
+        p:last-child {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    .toggle-offer-3-content {
+        border-bottom: 2px solid #ff96194d;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .offer-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        p {
+            color: $col-neutral-4;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .hidden-content {
+        border-top: 0;
+        padding-top: 0;
+        margin-top: 0;
+
+        .border-b {
+            max-width: calc(100% - 16px);
+            margin-bottom: 16px;
+        }
+    }
+
+    .border-b {
+        border-bottom: 2px solid #ff96194d;
+        max-width: calc(100% - 48px);
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .check-list {
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-bottom: 0px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .offer-options {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 38px;
+
+        p,
+        .item:last-child {
+            margin-bottom: 0px;
+        }
+
+        .item {
+            margin-bottom: 16px;
+
+            .title {
+                display: block;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+
+            .copy-text {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18.2px;
+                color: $col-links-light;
+            }
+
+            p {
+                text-align: center;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $bp-md) {
+    .single-offer-3 {
+        .row {
+            align-items: center;
+        }
+
+        .toggle-offer-3-content {
+            border-bottom: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .btn-review {
+            margin-bottom: 0;
+        }
+
+        .order-md-1 {
+            margin-top: 12px;
+        }
+
+        .border-b {
+            max-width: calc(100% - 20px);
+        }
+
+        .offer-info {
+            padding: 18px 12px 4px 12px;
+        }
+
+        .hidden-content {
+            .grid-list {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: $bp-lg) {
+    .single-offer-3 {
+        .btn.btn--1 {
+            max-width: 100%;
+        }
+
+        .col-lg-8 {
+            .grid-list {
+                grid-template-columns: repeat(auto-fill, 70px);
+            }
+        }
+    }
+}
