@@ -43,3 +43,28 @@
         }
     }
 }
+
+// Define the breakpoints
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+);
+
+// Generate order-{number} classes for numbers from 1 to 10
+@for $i from 1 through 10 {
+  .order-#{$i} {
+    order: $i;
+  }
+
+  // Responsive classes for each breakpoint
+  @each $breakpoint, $size in $breakpoints {
+    @media (min-width: $size) {
+      .order-#{$breakpoint}-#{$i} {
+        order: $i;
+      }
+    }
+  }
+}
+
