@@ -1,10 +1,10 @@
 .schema-faq {
     .schema-faq-section {
         margin-bottom: 20px;
+        position: relative;
         &:last-child {
             margin-bottom: 0;
         }
-        position: relative;
     }
     p {
         margin-top: 15px;

@@ -1,6 +1,7 @@
 .casino-info {
     width: 100%;
     position: relative;
+    margin-bottom: 40px !important;
     
     img {
         max-width: 56px;
@@ -58,6 +59,8 @@
     .casino-info {
         max-width: 810px;
         margin: 0 auto;
+        margin-bottom: 50px !important;
+
         img {
             max-width: 163px;
             top: 50%;

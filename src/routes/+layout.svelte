@@ -177,9 +177,11 @@
         jq(".toggle-offer-3-content").click(toggleOfferHiddenContent);
 
         // toggle ad disclosure hidden content
-        jq(".casino-disclosure .disc").click(function () {
+        function toggleDisclosure() {
             jq(this).find(".card").toggleClass("d-block");
-        });
+        }
+        jq(".casino-disclosure .disc").click(toggleDisclosure);
+        jq(".casino-disclosure-single").click(toggleDisclosure);
 
         jq(".schema-faq-section").each(function () {
             var jQuerythis = jq(this);

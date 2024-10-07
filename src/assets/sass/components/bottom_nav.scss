@@ -49,13 +49,12 @@
 
     &:hover {
       color: $col-primary-1;
-
+      transition: color 0.2s ease-in;
+      
       svg {
         stroke: $col-primary-1;
         transition: stroke 0.2s ease-in;
       }
-
-      transition: color 0.2s ease-in;
     }
 
     &.active {

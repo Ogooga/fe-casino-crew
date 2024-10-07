@@ -31,19 +31,6 @@
     }
 }
 
-@media screen and (min-width: $bp-md) {
-    .bg {
-        &--gray {
-            &.offers {
-                display: flex;
-                overflow-x: auto;
-                padding: 32px 36px 12px 36px;
-                border-radius: 16px;
-            }
-        }
-    }
-}
-
 // Define the breakpoints
 $breakpoints: (
   'sm': 576px,
@@ -66,5 +53,22 @@ $breakpoints: (
       }
     }
   }
+}
+
+.maxw-fit-content {
+    max-width: fit-content;
+}
+
+@media screen and (min-width: $bp-md) {
+    .bg {
+        &--gray {
+            &.offers {
+                display: flex;
+                overflow-x: auto;
+                padding: 32px 36px 12px 36px;
+                border-radius: 16px;
+            }
+        }
+    }
 }
 

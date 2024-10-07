@@ -28,9 +28,6 @@
       border-top: none;
       display: none;
       padding: 16px 24px;
-      input[type="checkbox"] {
-        visibility: hidden;
-      }
       position: absolute;
       z-index: 10;
       max-height: 400px;
@@ -38,6 +35,9 @@
 
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+      input[type="checkbox"] {
+        visibility: hidden;
+      }
     }
   
     .options-list label {

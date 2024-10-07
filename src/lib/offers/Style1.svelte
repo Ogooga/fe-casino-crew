@@ -29,8 +29,7 @@
 
     <div class="offer-text">
       <p>
-        100% bonus până la 2500 RON 100% bonus până la 2500 RON 100% bonus până
-        la 2500 RON 100% bonus până la 2500 RON
+        100% bonus până la 2500 RON 
       </p>
       <p>+ 600 Rotiri Gratuite</p>
     </div>

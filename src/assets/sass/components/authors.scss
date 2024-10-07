@@ -238,6 +238,8 @@
 
 @media screen and (min-width: $bp-xl) {
     .author-card-full {
+        padding-top: 24px;
+        padding-bottom: 24px;
         &.in-row {
             padding: 17px;
             .author-details {
@@ -269,8 +271,6 @@
             }
         }
 
-        padding-top: 24px;
-        padding-bottom: 24px;
         .row {
             align-items: center;
         }
