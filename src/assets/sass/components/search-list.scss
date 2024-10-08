@@ -1,0 +1,38 @@
+.page-search-list {
+  .single-offer-1 {
+    height: auto;
+  }
+
+  .offers-col {
+    background-color: $col-neutral-6;
+    display: flex;
+    overflow-y: auto;
+    gap: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    .single-offer-1 {
+      min-width: 336px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .page-search-list {
+    .single-offer-1 {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .offers-col {
+      border-radius: 3px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      height: fit-content;
+      display: block;
+    }
+  }
+}

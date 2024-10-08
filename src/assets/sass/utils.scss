@@ -1,42 +1,42 @@
 .bg {
-    &--gray {
-        background: $col-neutral-6;
-        
-        &.offers {
-            padding: 24px 12px;
+  &--gray {
+    background: $col-neutral-6;
 
-            .single-offer-1 {
-                height: auto;
-            }
-        }
+    &.offers {
+      padding: 24px 12px;
+
+      .single-offer-1 {
+        height: auto;
+      }
     }
+  }
 }
 
 .c {
-    &--gray {
-        color: $col-neutral-6;
-    }
+  &--gray {
+    color: $col-neutral-6;
+  }
 }
 
 .offers-scroll {
-    display: flex;
-    align-items: stretch;
-    overflow-x: auto;
-    padding-bottom: 20px;
-    gap: 24px;
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  gap: 24px;
 
-    .single-offer-1 {
-        min-width: 336px;
-        max-width: 405px;
-    }
+  .single-offer-1 {
+    min-width: 336px;
+    max-width: 405px;
+  }
 }
 
 // Define the breakpoints
 $breakpoints: (
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
 );
 
 // Generate order-{number} classes for numbers from 1 to 10
@@ -56,19 +56,23 @@ $breakpoints: (
 }
 
 .maxw-fit-content {
-    max-width: fit-content;
+  max-width: fit-content;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
 }
 
 @media screen and (min-width: $bp-md) {
-    .bg {
-        &--gray {
-            &.offers {
-                display: flex;
-                overflow-x: auto;
-                padding: 32px 36px 12px 36px;
-                border-radius: 16px;
-            }
-        }
+  .bg {
+    &--gray {
+      &.offers {
+        display: flex;
+        overflow-x: auto;
+        padding: 32px 36px 12px 36px;
+        border-radius: 16px;
+      }
     }
+  }
 }
-
