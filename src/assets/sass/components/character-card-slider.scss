@@ -1,0 +1,158 @@
+.hp-characters-card-slider {
+  background: url("/images/homepage/futuristic-yacht.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: grab;
+
+  .splide__pagination {
+    bottom: -50px;
+    gap: 16px;
+    flex-wrap: nowrap;
+
+    li::before {
+      content: none;
+    }
+
+    li {
+      width: 100%;
+      max-width: 121px;
+      padding: 0;
+
+      button {
+        width: 100%;
+        border-radius: 10px;
+
+        &.is-active {
+          background: $col-primary-1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  .heading {
+    color: $col-neutral-7;
+    text-align: center;
+
+    .title {
+      color: $col-neutral-7;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .card {
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12.5px);
+    height: 100%;
+
+    .title {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.28px;
+
+      &:last-of-type {
+        padding-right: 90px;
+      }
+    }
+
+    a {
+      color: $col-primary-1;
+      font-weight: 600;
+      text-decoration: none;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .char-img {
+    max-width: 113px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .hp-characters-card-slider {
+    .heading {
+      .title {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 67px;
+      }
+    }
+
+    .splide__track {
+      overflow: visible;
+    }
+
+    .card {
+      max-width: 991px;
+      margin: 0 auto;
+      padding: 57px 107px 34px 107px;
+
+      .title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 16px;
+
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+
+      .content {
+        padding-left: 200px;
+      }
+    }
+
+    .char-img {
+      max-width: 302px;
+      right: auto;
+      left: 0;
+    }
+  }
+}

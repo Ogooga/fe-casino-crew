@@ -1,0 +1,35 @@
+.hp-offers-slider {
+  background-image: url("/images/homepage/futuristic-yacht-party.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .splide {
+    cursor: grab;
+  }
+
+  .splide__track {
+    overflow: visible;
+  }
+
+  #hp-offers-slider {
+    .splide__slide[aria-hidden="true"] {
+      opacity: 0.3;
+      transform: translateY(-30px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .toggle-offer-1-content {
+      display: none;
+    }
+
+    .splide__slide {
+      opacity: 1;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  }
+}

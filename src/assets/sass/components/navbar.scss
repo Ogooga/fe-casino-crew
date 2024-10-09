@@ -1,3 +1,11 @@
+.nav-ctn {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .nav {
   color: $col-neutral-7;
   margin-top: 8px;
@@ -279,11 +287,10 @@
     }
 
     .nav-menu__ctn {
-
       .nav-menu {
         max-width: 18%;
         padding-right: 0px;
-        
+
         .nav-childs {
           position: absolute;
           top: 11px;
@@ -296,7 +303,7 @@
           flex-direction: column;
           flex-wrap: wrap;
           gap: 18px;
-          
+
           .nav-item {
             margin-right: 120px;
             margin-bottom: 0px;
@@ -308,7 +315,7 @@
             background: #ff961966;
           }
         }
-        
+
         .nav-item {
           border-bottom: 2px solid transparent;
           .nav-item-toggler {
@@ -324,7 +331,6 @@
         }
       }
     }
-    
   }
 }
 

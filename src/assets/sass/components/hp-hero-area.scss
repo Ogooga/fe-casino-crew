@@ -1,0 +1,48 @@
+.hp-hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0px 20px;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 36px;
+      color: $col-neutral-7;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .hp-hero {
+    .content {
+      max-width: 820px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-xl) {
+  .hp-hero {
+    .content {
+      h1 {
+        font-size: 48px;
+        line-height: 52px;
+      }
+    }
+  }
+}
