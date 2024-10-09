@@ -31,6 +31,7 @@
   import HeroBlockContact from "../../lib/components/Hero-Block-Contact.svelte";
   import HeroBlockCharacterPage from "../../lib/components/Hero-Block-Character-Page.svelte";
   import BlockSocialMediaPost from "../../lib/components/Block-Social-Media-Post.svelte";
+  import BlockCharacterCasino from "../../lib/components/Block-Character-Casino.svelte";
 </script>
 
 <div class="demo-blocks">
@@ -133,7 +134,8 @@
   <h1>Block-About-Info-Dark</h1>
   <BlockAboutInfoDark />
 
-  <h1>WIP - Block-Character-Casino</h1>
+  <h1>Block-Character-Casino</h1>
+  <BlockCharacterCasino />
 
   <h1>Block-4-icons-info</h1>
   <Block_4IconsInfo />
@@ -158,7 +160,6 @@
     <h1>Block-Table</h1>
     <h1>Block-Graphic-Light</h1>
     <h1>Block-Graphic-Dark</h1>
-    <h1>Block-Character-Casino</h1>
     <h1>Block-Story-Post</h1>
     <h1>Block-Threads</h1>
     <h1>Block-Character-Role-Animated</h1>

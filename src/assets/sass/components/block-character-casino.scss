@@ -1,0 +1,95 @@
+.block-character-casino {
+  background: $col-neutral-10;
+  padding: 32px 0px;
+
+  .heading {
+    color: $col-neutral-7;
+    margin-bottom: 37px;
+    text-align: center;
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+    }
+  }
+
+  .character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+    .char-img {
+      margin-bottom: 0;
+      position: relative;
+      bottom: -50px;
+      z-index: 1;
+      max-width: 100px;
+    }
+
+    .char-card {
+      padding: 10px 22px;
+      border-radius: 6.754px;
+      border: 1.477px solid #fff;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(0.9845951199531555px);
+      display: flex;
+      z-index: 2;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      width: 100%;
+
+      img {
+        margin-bottom: 5px;
+        max-width: 80px;
+      }
+    }
+  }
+
+  .cta {
+    display: flex;
+    justify-content: center;
+
+    .btn.btn--2 {
+      color: $col-neutral-7;
+      border-color: $col-neutral-7;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .block-character-casino {
+    padding: 77px 0px 0px 0px;
+    .heading,
+    .cta {
+      display: none;
+    }
+
+    .character {
+      .char-img {
+        max-width: 254px;
+      }
+
+      .char-card {
+        height: 120px;
+        justify-content: space-around;
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}

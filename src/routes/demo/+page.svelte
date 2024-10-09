@@ -1,5 +1,5 @@
 <script>
-  import BlockSocialMediaPost from "../../lib/components/Block-Social-Media-Post.svelte";
+  import BlockCharacterCasino from "../../lib/components/Block-Character-Casino.svelte";
 </script>
 
-<BlockSocialMediaPost />
+<BlockCharacterCasino />
