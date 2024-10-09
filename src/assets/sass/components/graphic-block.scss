@@ -1,10 +1,38 @@
 .graphic-block {
   padding: 32px 0px;
-  filter: blur(10px);
 
   &.light {
     .card {
       border-color: #fff;
+    }
+    .shape {
+      display: none;
+    }
+  }
+
+  &.dark {
+    background: $col-neutral-10;
+    position: relative;
+
+    .border-wrap {
+      border-radius: 24px;
+      position: relative;
+      background: linear-gradient(
+        107.09deg,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0) 104.27%
+      );
+      padding: 3px;
+    }
+
+    .card {
+      background-color: $col-neutral-11;
+      backdrop-filter: blur(10px);
+      color: $col-neutral-7;
+    }
+
+    .shape {
+      display: none;
     }
   }
 
@@ -96,7 +124,16 @@
     width: 100%;
     margin-bottom: 0;
 
+    .legend-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+    }
+
     li {
+      display: flex;
+      align-items: center;
+      gap: 15px;
       position: static;
       padding: 0px;
       margin-bottom: 16px;
@@ -132,6 +169,31 @@
   .graphic-block {
     padding: 66px 0px;
 
+    &.dark {
+      overflow: hidden;
+      .shape {
+        position: absolute;
+        bottom: -100%;
+        right: -30%;
+        display: block;
+        width: 1070px;
+        height: 1070px;
+        border-radius: 100%;
+        opacity: 0.15;
+        background: $col-primary-1;
+        filter: blur(83px);
+        z-index: 1;
+      }
+
+      .card {
+        z-index: 2;
+      }
+
+      .pie::before {
+        border-color: $col-neutral-1;
+      }
+    }
+
     .card {
       padding: 32px 80px 45px 80px;
     }
@@ -156,6 +218,15 @@
 
       .legend {
         width: fit-content;
+
+        em {
+          font-size: 20px;
+          line-height: 20px;
+        }
+
+        li {
+          margin-bottom: 40px;
+        }
       }
     }
 
@@ -186,6 +257,7 @@
       height: 300px;
       top: 51px;
       left: 51px;
+      border: 20px solid $col-neutral-7;
     }
   }
 }

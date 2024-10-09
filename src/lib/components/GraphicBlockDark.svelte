@@ -77,11 +77,11 @@
       }
     }
 
-    createPie(".pieID.legend", ".pieID.pie");
+    createPie(".graphic-block.dark .pieID.legend", ".pieID.pie");
   });
 </script>
 
-<div class="graphic-block light mb-4 mb-md-5">
+<div class="graphic-block dark mb-4 mb-md-5">
   <div class="container">
     <div class="border-wrap">
       <div class="card">
@@ -126,6 +126,8 @@
       </div>
     </div>
   </div>
+
+  <div class="shape"></div>
 </div>
 
 <style>

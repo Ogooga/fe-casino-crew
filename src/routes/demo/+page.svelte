@@ -1,5 +1,7 @@
 <script>
-  import BlockCharacterCasino from "../../lib/components/Block-Character-Casino.svelte";
+  import GraphicBlock from "../../lib/components/GraphicBlock.svelte";
+  import GraphicBlockDark from "../../lib/components/GraphicBlockDark.svelte";
 </script>
 
-<BlockCharacterCasino />
+<GraphicBlock />
+<GraphicBlockDark />

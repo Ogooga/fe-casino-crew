@@ -32,6 +32,8 @@
   import HeroBlockCharacterPage from "../../lib/components/Hero-Block-Character-Page.svelte";
   import BlockSocialMediaPost from "../../lib/components/Block-Social-Media-Post.svelte";
   import BlockCharacterCasino from "../../lib/components/Block-Character-Casino.svelte";
+  import GraphicBlock from "../../lib/components/GraphicBlock.svelte";
+  import GraphicBlockDark from "../../lib/components/GraphicBlockDark.svelte";
 </script>
 
 <div class="demo-blocks">
@@ -126,10 +128,13 @@
 
     <h1>Block-About-Info-Light</h1>
     <BlockAboutInfoLight />
-
-    <h1>WIP - Block-Graphic-Light</h1>
-    <h1>WIP - Block-Graphic-Dark</h1>
   </div>
+
+  <h1>Block-Graphic-Light</h1>
+  <GraphicBlock />
+
+  <h1>Block-Graphic-Dark</h1>
+  <GraphicBlockDark />
 
   <h1>Block-About-Info-Dark</h1>
   <BlockAboutInfoDark />
@@ -158,8 +163,6 @@
     <h2 class="text-center">Missing Blocks</h2>
     <h1>Hero-Block-Homepage</h1>
     <h1>Block-Table</h1>
-    <h1>Block-Graphic-Light</h1>
-    <h1>Block-Graphic-Dark</h1>
     <h1>Block-Story-Post</h1>
     <h1>Block-Threads</h1>
     <h1>Block-Character-Role-Animated</h1>
