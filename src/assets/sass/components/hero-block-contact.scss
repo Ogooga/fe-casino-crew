@@ -1,0 +1,127 @@
+.contact-us-form {
+  .title {
+    color: $col-neutral-8;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .custom-dropdown {
+    margin-bottom: 24px;
+    .option-header {
+      justify-content: center;
+      gap: 10px;
+      h5 {
+        font-size: 14px;
+      }
+    }
+
+    .options-list {
+      label {
+        font-size: 14px;
+      }
+    }
+  }
+
+  form {
+    label {
+      color: $col-neutral-8;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      border-radius: 50px;
+      border: 2px solid $col-primary-1;
+      background: $col-neutral-7;
+      padding: 17px 16px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 24px;
+      }
+
+      &::placeholder {
+        color: $col-neutral-9;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    textarea {
+      border-radius: 16px;
+      min-height: 177px;
+    }
+
+    .btn.btn--2 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .contact-us-form {
+    .title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 52px;
+      margin-bottom: 40px;
+    }
+
+    .custom-dropdown {
+      margin-bottom: 40px;
+      .option-header {
+        h5 {
+          font-size: 18px;
+        }
+      }
+
+      .options-list {
+        label {
+          font-size: 18px;
+        }
+      }
+    }
+
+    form {
+      label {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      textarea {
+        padding: 17px 16px;
+        margin-bottom: 16px;
+
+        &::placeholder {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      textarea {
+        height: calc(100% - 32px);
+        margin-bottom: 0px !important;
+      }
+
+      .btn.btn--2 {
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 40px;
+        min-width: 404px;
+      }
+    }
+  }
+}
