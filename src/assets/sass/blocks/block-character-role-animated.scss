@@ -1,0 +1,91 @@
+.block-character-role-animated {
+  .character-info__content {
+    position: relative;
+  }
+
+  .slots-wrap {
+    height: 70px;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+    left: -2px;
+    margin: 0 10px;
+  }
+
+  .slot-text {
+    position: absolute;
+    top: -15px;
+  }
+
+  // .slots {
+  //   animation: slot-animation 1.8s;
+  //   animation-timing-function: cubic-bezier(0.36, 1.28, 0.75, 1.1);
+  //   animation-fill-mode: forwards;
+  //   animation-delay: 1s;
+  // }
+
+  .animate-slots {
+    animation: slot-animation 1.8s;
+    animation-timing-function: cubic-bezier(0.36, 1.28, 0.75, 1.1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+
+  .slot,
+  .caption {
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    margin: 0;
+    font-size: 45.55px;
+    font-weight: 800;
+    line-height: 50.94px;
+    letter-spacing: 17px;
+  }
+
+  .caption {
+    width: 100%;
+    height: auto;
+    letter-spacing: normal;
+    margin-top: 60px;
+  }
+
+  @keyframes slot-animation {
+    0% {
+      transform: translateY(-1px);
+    }
+    100% {
+      transform: translateY(-9 * 70px);
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .block-character-role-animated {
+    .character-info__content {
+      max-height: max-content;
+    }
+
+    .slot,
+    .caption {
+      font-size: 87.62px;
+      line-height: 98px;
+    }
+
+    .slot {
+      letter-spacing: 40px;
+      line-height: 68px;
+    }
+
+    .slots-wrap {
+      height: 71px;
+    }
+
+    .caption {
+      margin-top: 90px;
+    }
+  }
+}

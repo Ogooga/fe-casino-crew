@@ -34,6 +34,11 @@
   import BlockCharacterCasino from "../../lib/components/Block-Character-Casino.svelte";
   import GraphicBlock from "../../lib/components/GraphicBlock.svelte";
   import GraphicBlockDark from "../../lib/components/GraphicBlockDark.svelte";
+  import BlockStoryPost from "../../lib/components/Block-Story-Post.svelte";
+  import BlockThreads from "../../lib/components/Block-Threads.svelte";
+  import BlockCharacterRoleAnimated from "../../lib/components/Block-Character-Role-Animated.svelte";
+  import BlockCharacterSlider from "../../lib/components/Block-Character-Slider.svelte";
+  import BlockCharacterPageLink from "../../lib/components/Block-Character-Page-Link.svelte";
 </script>
 
 <div class="demo-blocks">
@@ -151,23 +156,32 @@
 
     <h1>Block-Social-Media-Post</h1>
     <BlockSocialMediaPost />
+  </div>
+  <div class="mb-4 mb-5"></div>
 
-    <h1>WIP - Block-Story-Post</h1>
-    <h1>WIP - Block-Threads</h1>
-    <h1>WIP - Block-Character-Role-Animated</h1>
-    <h1>WIP - Block-Character-Slider</h1>
-    <h1>WIP - Block-Character-Page-Link</h1>
+  <h1>Block-Story-Post</h1>
+  <BlockStoryPost />
 
+  <h1>Block-Threads</h1>
+  <BlockThreads />
+
+  <div class="container">
+    <h1>Block-Character-Role-Animated</h1>
+    <BlockCharacterRoleAnimated />
+  </div>
+
+  <h1>Block-Character-Slider</h1>
+  <BlockCharacterSlider />
+
+  <h1>Block-Character-Page-Link</h1>
+  <BlockCharacterPageLink />
+
+  <div class="container">
     <div class="mb-5"></div>
 
     <h2 class="text-center">Missing Blocks</h2>
     <h1>Hero-Block-Homepage</h1>
     <h1>Block-Table</h1>
-    <h1>Block-Story-Post</h1>
-    <h1>Block-Threads</h1>
-    <h1>Block-Character-Role-Animated</h1>
-    <h1>Block-Character-Slider</h1>
-    <h1>Block-Character-Page-Link</h1>
   </div>
 </div>
 

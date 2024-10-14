@@ -136,7 +136,9 @@
   ];
 </script>
 
-<div class="block-social-media-post block-social-media gallery mb-4 mb-md-5">
+<div
+  class="block-social-media-post block-social-media gallery mb-4 mb-md-5 container"
+>
   {#each posts as post, i}
     <div class="post gallery-item">
       <div
@@ -175,6 +177,19 @@
       </div>
     </div>
   {/each}
+</div>
+
+<!-- button -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <a
+        href="https://www.supercazino.ro/blog/betano-bonus-fara-depunere/"
+        class="btn btn--1">See the Entire Feed</a
+      >
+    </div>
+  </div>
 </div>
 
 <!-- Modal -->

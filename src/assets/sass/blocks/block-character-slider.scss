@@ -1,0 +1,88 @@
+.block-character-slider {
+  background-image: url("/images/block-threads-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0px 60px 0px;
+
+  .splide__slide {
+    position: relative;
+
+    a {
+      text-decoration: none;
+    }
+
+    .name {
+      font-size: 92.11px;
+      font-weight: 800;
+      line-height: 99.78px;
+      color: $col-neutral-7;
+      opacity: 0.2;
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      margin-bottom: 0;
+      margin-top: 80px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $col-neutral-7;
+      font-size: 19.72px;
+      font-weight: 500;
+      line-height: 23.67px;
+      text-align: center;
+    }
+  }
+
+  .splide__pagination {
+    bottom: -35px;
+    gap: 16px;
+    flex-wrap: nowrap;
+
+    li::before {
+      content: none;
+    }
+
+    li {
+      width: 100%;
+      max-width: 50px;
+      padding: 0;
+
+      button {
+        width: 100%;
+        border-radius: 10px;
+        height: 4px;
+
+        &.is-active {
+          background: $col-primary-1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .block-character-slider {
+    .splide__slide {
+      .name {
+        font-size: 186.81px;
+        line-height: 202.37px;
+      }
+
+      img {
+        margin-top: 140px;
+      }
+
+      p {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+  }
+}

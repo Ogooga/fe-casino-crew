@@ -98,7 +98,8 @@
     }
 }
 
-.character-info {
+.character-info,
+.block-character-role-animated {
     margin-top: 140px;
     margin-bottom: 100px !important;
     &__ctn {
@@ -155,7 +156,8 @@
 }
 
 @media screen and (min-width: $bp-md) {
-    .character-info {
+    .character-info,
+    .block-character-role-animated {
         .col-md-4 {
             position: relative;
         }
@@ -179,7 +181,8 @@
 }
 
 @media screen and (min-width: $bp-lg) {
-    .character-info {
+    .character-info,
+    .block-character-role-animated {
         &__img {
             width: 100%;
             top: -40%;
@@ -221,7 +224,8 @@
         }
     }
 
-    .character-info {
+    .character-info,
+    .block-character-role-animated {
         margin-top: 180px;
         &__img {
             top: -50%;
