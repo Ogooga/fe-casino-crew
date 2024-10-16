@@ -1,6 +1,7 @@
 .block-character-page {
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
   video {
     min-width: 100%;

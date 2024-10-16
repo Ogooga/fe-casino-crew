@@ -13,7 +13,7 @@
   }
 
   .splide__pagination {
-    bottom: -70px;
+    bottom: -40px;
     gap: 16px;
     flex-wrap: nowrap;
 
@@ -38,8 +38,26 @@
     }
   }
 
-  .splide__track {
-    overflow: visible;
+  .casino-info {
+    img {
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-md) {
+  .hp-offers-slider {
+    .casino-info__msg {
+      padding-right: 180px;
+    }
+  } 
+}
+
+@media screen and (min-width: $bp-lg) {
+  .hp-offers-slider {
+    .splide__track {
+      overflow: visible;
+    }
   }
 
   #hp-offers-slider {
