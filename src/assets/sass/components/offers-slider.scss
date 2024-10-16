@@ -12,6 +12,32 @@
     cursor: grab;
   }
 
+  .splide__pagination {
+    bottom: -70px;
+    gap: 16px;
+    flex-wrap: nowrap;
+
+    li::before {
+      content: none;
+    }
+
+    li {
+      width: 100%;
+      max-width: 121px;
+      padding: 0;
+
+      button {
+        width: 100%;
+        border-radius: 10px;
+
+        &.is-active {
+          background: $col-primary-1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
   .splide__track {
     overflow: visible;
   }

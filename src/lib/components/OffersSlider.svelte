@@ -6,7 +6,7 @@
   onMount(() => {
     new Splide("#hp-offers-slider", {
       arrows: false,
-      pagination: false,
+      pagination: true,
       gap: 30,
       autoplay: true,
       interval: 2500,

@@ -361,7 +361,7 @@
   </nav>
 </div>
 
-<div class="bottom-nav">
+<div class="container-lg bottom-nav">
   <div class="bottom-nav__ctn">
     <a href="https://google.es/" class="bottom-nav__item active">
       <svg
