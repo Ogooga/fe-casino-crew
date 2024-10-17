@@ -7,6 +7,10 @@
   height: 100vh;
   position: relative;
 
+  .vector {
+    display: none;
+  }
+
   .glass-border {
     border-radius: 100%;
     border: 2px solid #fff;
@@ -263,6 +267,52 @@
           left: -41px;
           right: auto;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $bp-xl) {
+  .characters-map {
+    .characters-map__row {
+      position: relative;
+      top: 60px;
+    }
+
+    .char-card {
+      margin-bottom: 180px;
+    }
+    .vector {
+      display: inline;
+      max-width: 100px;
+      position: absolute;
+    }
+
+    .char-card-1 {
+      .vector {
+        right: -100px;
+        top: 50px;
+      }
+    }
+
+    .char-card-2 {
+      .vector {
+        top: 50px;
+        left: -100px;
+      }
+    }
+
+    .char-card-3 {
+      .vector {
+        right: -100px;
+        bottom: 50px;
+      }
+    }
+
+    .char-card-4 {
+      .vector {
+        bottom: 50px;
+        left: -100px;
       }
     }
   }

@@ -34,7 +34,7 @@
   });
 </script>
 
-<section class="hp-offers-slider">
+<section class="hp-offers-slider py-3">
   <div class="container">
     <div
       id="hp-tip-offers-slider"
@@ -52,7 +52,7 @@
       </div>
     </div>
 
-    <div id="hp-offers-slider" class="splide" aria-label="Offers Slidere">
+    <div id="hp-offers-slider" class="splide mb-5" aria-label="Offers Slidere">
       <div class="splide__track">
         <div class="splide__list">
           {#each Array(6) as _, index}
@@ -62,6 +62,12 @@
           {/each}
         </div>
       </div>
+    </div>
+
+    <div class="d-flex justify-content-center py-5">
+      <a href="https://placehold.co/100x100" class="btn btn--2"
+        >Call to Action ></a
+      >
     </div>
   </div>
 </section>

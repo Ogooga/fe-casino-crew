@@ -201,6 +201,50 @@
               </defs>
             </svg>
           </div>
+          <span class="vector">
+            <svg
+              width="120"
+              height="99"
+              viewBox="0 0 120 99"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.3" filter="url(#filter0_b_2377_18932)">
+                <path
+                  d="M107.187 2.08594L107.159 0.0861348L109.159 0.058043L109.187 2.05785L107.187 2.08594ZM119.059 87.7608C119.141 93.6513 114.433 98.4935 108.543 98.5763C102.652 98.659 97.8102 93.9509 97.7274 88.0605C97.6447 82.17 102.353 77.3278 108.243 77.245C114.134 77.1623 118.976 81.8704 119.059 87.7608ZM0.731828 1.58115L107.159 0.0861348L107.216 4.08574L0.788012 5.58076L0.731828 1.58115ZM109.187 2.05785L110.393 87.8826L106.393 87.9387L105.188 2.11403L109.187 2.05785Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_2377_18932"
+                  x="-36.7682"
+                  y="-37.4419"
+                  width="193.328"
+                  height="173.519"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur
+                    in="BackgroundImageFix"
+                    stdDeviation="18.75"
+                  />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_2377_18932"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_2377_18932"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </span>
         </a>
       </div>
       <div class="col-12 col-md-6">
@@ -357,6 +401,50 @@
               </defs>
             </svg>
           </div>
+          <div class="vector">
+            <svg
+              width="61"
+              height="83"
+              viewBox="0 0 61 83"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.3" filter="url(#filter0_b_2377_18979)">
+                <path
+                  d="M11 2.43945V0.439453H9V2.43945H11ZM0.333333 72.263C0.333333 78.154 5.10896 82.9296 11 82.9296C16.891 82.9296 21.6667 78.154 21.6667 72.263C21.6667 66.3719 16.891 61.5963 11 61.5963C5.10896 61.5963 0.333333 66.3719 0.333333 72.263ZM60.6116 0.439453H11V4.43945H60.6116V0.439453ZM9 2.43945V72.263H13V2.43945H9Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_2377_18979"
+                  x="-37.1667"
+                  y="-37.0605"
+                  width="135.278"
+                  height="157.49"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur
+                    in="BackgroundImageFix"
+                    stdDeviation="18.75"
+                  />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_2377_18979"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_2377_18979"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
         </a>
       </div>
       <div class="col-12 col-md-6">
@@ -501,6 +589,50 @@
                     transform="translate(12.8828 -0.00195312) rotate(12.1981)"
                   />
                 </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="vector">
+            <svg
+              width="70"
+              height="112"
+              viewBox="0 0 70 112"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.3" filter="url(#filter0_b_2377_19000)">
+                <path
+                  d="M58.9407 110V112H60.9407V110H58.9407ZM69.6073 11C69.6073 5.10896 64.8317 0.333336 58.9407 0.333336C53.0496 0.333336 48.274 5.10896 48.274 11C48.274 16.891 53.0496 21.6667 58.9407 21.6667C64.8317 21.6667 69.6073 16.891 69.6073 11ZM0.940674 112H58.9407V108H0.940674V112ZM60.9407 110V11H56.9407V110H60.9407Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_2377_19000"
+                  x="-36.5593"
+                  y="-37.1665"
+                  width="143.667"
+                  height="186.667"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur
+                    in="BackgroundImageFix"
+                    stdDeviation="18.75"
+                  />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_2377_19000"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_2377_19000"
+                    result="shape"
+                  />
+                </filter>
               </defs>
             </svg>
           </div>
@@ -683,6 +815,50 @@
                     transform="translate(0.935486 14.3296) rotate(-9.74909)"
                   />
                 </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="vector">
+            <svg
+              width="61"
+              height="129"
+              viewBox="0 0 61 129"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.3" filter="url(#filter0_b_2377_18959)">
+                <path
+                  d="M11 127V129H9V127H11ZM0.333333 11C0.333333 5.10896 5.10896 0.333328 11 0.333328C16.891 0.333328 21.6667 5.10896 21.6667 11C21.6667 16.891 16.891 21.6667 11 21.6667C5.10896 21.6667 0.333333 16.891 0.333333 11ZM61 129H11V125H61V129ZM9 127V11H13V127H9Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_2377_18959"
+                  x="-37.1667"
+                  y="-37.1665"
+                  width="135.667"
+                  height="203.667"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur
+                    in="BackgroundImageFix"
+                    stdDeviation="18.75"
+                  />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_2377_18959"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_2377_18959"
+                    result="shape"
+                  />
+                </filter>
               </defs>
             </svg>
           </div>
