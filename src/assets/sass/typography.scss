@@ -105,6 +105,24 @@ ol {
 .wp-table {
   max-width: 100%;
   overflow-x: auto;
+
+  &.dark {
+    thead {
+      background: rgba(255, 255, 255, 0.86);
+      color: $col-primary-3;
+    } 
+
+    tbody {
+      tr:nth-child(even) {
+        background-color: #897f7d;
+        color: $col-neutral-7;
+      }
+      tr:nth-child(odd) {
+        background-color: #574f57;
+        color: $col-neutral-7
+      }
+    }
+  }
 }
 
 table {

@@ -39,6 +39,9 @@
   import BlockCharacterRoleAnimated from "../../lib/components/Block-Character-Role-Animated.svelte";
   import BlockCharacterSlider from "../../lib/components/Block-Character-Slider.svelte";
   import BlockCharacterPageLink from "../../lib/components/Block-Character-Page-Link.svelte";
+  import HeroBlockHomepage from "../../lib/components/HeroBlockHomepage.svelte";
+  import BlockTableDark from "../../lib/components/Block-Table-Dark.svelte";
+  import BlockTableLight from "../../lib/components/Block-Table-Light.svelte";
 </script>
 
 <div class="demo-blocks">
@@ -63,11 +66,15 @@
 
     <h1>Hero-Block-Contact</h1>
     <HeroBlockContact />
+  </div>
 
-    <h1>WIP - Hero-Block-Homepage</h1>
-    <h1>Hero-Block-Character-Page</h1>
-    <HeroBlockCharacterPage />
+  <h1>Hero-Block-Homepage</h1>
+  <HeroBlockHomepage />
 
+  <h1>Hero-Block-Character-Page</h1>
+  <HeroBlockCharacterPage />
+
+  <div class="container">
     <h1>Card-Block-Slots-Filters-Pagination</h1>
     <h1>Card-Block-Slots-Pagination</h1>
     <CardBlockSlotsFiltersPagination />
@@ -123,8 +130,17 @@
     <h1>Block-Highlight-Content</h1>
     <BlockHighlightContent />
 
-    <h1>WIP - Block-Table</h1>
+    <h1>Block-Table</h1>
+    <BlockTableLight />
+  </div>
 
+  <div class="content-area py-5">
+    <div class="container">
+      <BlockTableDark />
+    </div>
+  </div>
+
+  <div class="container">
     <h1>Block-Character-Bubble</h1>
     <CasinoInfo />
 
@@ -175,14 +191,6 @@
 
   <h1>Block-Character-Page-Link</h1>
   <BlockCharacterPageLink />
-
-  <div class="container">
-    <div class="mb-5"></div>
-
-    <h2 class="text-center">Missing Blocks</h2>
-    <h1>Hero-Block-Homepage</h1>
-    <h1>Block-Table</h1>
-  </div>
 </div>
 
 <style>

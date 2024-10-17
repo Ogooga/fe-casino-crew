@@ -1,3 +1,7 @@
+<script>
+  import BlockTableLight from "../../lib/components/Block-Table-Light.svelte";
+
+</script>
 <div class="container p-3">
     <h1>H1: Lorem ipsum dolor sit amet.</h1>
     <h2>H2: Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
@@ -51,53 +55,7 @@
     <a href="https://google.es/" class="btn btn--3 disabled"
         >Disabled Secondary btn ></a
     >
-
-    <div class="wp-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Table Head</th>
-                    <th>Table Head</th>
-                    <th>Table Head</th>
-                    <th>Table Head</th>
-                    <th>Table Head</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-                <tr>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                    <td>Table Data</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
+    <BlockTableLight />
     <div class="mb-5"></div>
 
     <img src="https://placehold.co/600x400" alt="placehold" />
