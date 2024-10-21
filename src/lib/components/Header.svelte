@@ -1,3 +1,9 @@
+<script>
+  import Chat from "../flows/Chat.svelte";
+  import Oboarding_2 from "../flows/Oboarding-2.svelte";
+  import Onboarding_1 from "../flows/Onboarding-1.svelte";
+</script>
+
 <div class="container nav-ctn">
   <nav class="nav">
     <div class="nav__logo">
@@ -574,7 +580,7 @@
     </a>
   </div>
   <div class="bottom-nav__msg">
-    <div class="popup__ctn">
+    <!-- <div class="popup__ctn">
       <p>
         Quisque consectetur fermentum ante sed volutpat. In id augue maximus!
       </p>
@@ -591,9 +597,12 @@
           fill="#232323"
         />
       </svg>
-    </div>
+    </div> -->
+    <Chat />
     <div class="ana-ctn">
       <img src="/images/ana-img.png" alt="Ana img" />
     </div>
   </div>
 </div>
+
+<div class="overlay"></div>

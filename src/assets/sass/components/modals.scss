@@ -1,0 +1,374 @@
+.onboarding {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  display: none;
+
+  .modal_ctn {
+    padding: 12px;
+    height: 100%;
+  }
+
+  .modal_content {
+    background: $col-neutral-7;
+    border-radius: 14px;
+    box-shadow: 4px 4px 4px 0px #00000033;
+    padding: 24px 16px;
+    position: fixed;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 336px;
+    margin: 0 auto;
+    text-align: center;
+
+    .h1 {
+      max-width: 230px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+
+    .btn.btn--1 {
+      text-transform: uppercase;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    .btn.btn-skip {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 39px;
+    }
+  }
+}
+
+.onboarding-1 {
+  #step1,
+  #step2,
+  #step3 {
+    display: none;
+  }
+
+  .modal_ctn {
+    .hp-characters-guide {
+      background: transparent;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .go-back {
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      cursor: pointer;
+    }
+
+    .q-label {
+      color: $col-primary-2;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    form {
+      margin-bottom: 32px;
+      div {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 16px;
+
+        input[type="radio"] {
+          accent-color: $col-primary-2;
+        }
+      }
+
+      .form-control {
+        cursor: pointer;
+        border: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: left;
+      }
+
+      input[type="radio"] {
+        /* Add if not using autoprefixer */
+        -webkit-appearance: none;
+        /* Remove most all native input styles */
+        appearance: none;
+        /* For iOS < 15 */
+        /* Not removed via appearance */
+        margin: 0;
+
+        font: inherit;
+        color: $col-primary-2;
+        width: 1.15em;
+        height: 1.15em;
+        border: 1px solid $col-primary-2;
+        border-radius: 50%;
+        transform: translateY(-0.075em);
+
+        display: grid;
+        place-content: center;
+        min-width: 18px;
+        min-height: 18px;
+      }
+
+      input[type="radio"]::before {
+        content: "";
+        width: 0.65em;
+        height: 0.65em;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        /* Windows High Contrast Mode */
+        background-color: $col-primary-2;
+      }
+
+      input[type="radio"]:checked::before {
+        transform: scale(1);
+      }
+    }
+
+    .q-legend {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 22px;
+      color: $col-primary-2;
+    }
+  }
+}
+
+.onboarding-highlight {
+  border: 1px solid $col-primary-1;
+  z-index: 100;
+  padding: 5px 10px;
+}
+
+.onboarding-2 {
+  .modal_content {
+    padding: 24px 0px;
+
+    .h1 {
+      padding: 0px 16px;
+      max-width: max-content;
+    }
+
+    button.btn {
+      margin: 0px 16px;
+      width: -webkit-fill-available !important;
+    }
+  }
+
+  #step1,
+  #step2,
+  #step3,
+  #step4 {
+    .image-ctn {
+      position: relative;
+      height: 220px;
+
+      img {
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        z-index: -1;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #step2,
+  #step3,
+  #step4 {
+    .image-ctn {
+      margin-bottom: 18px;
+    }
+
+    p {
+      padding: 0 16px;
+    }
+
+    span {
+      cursor: pointer;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 20;
+  display: none;
+}
+
+.chat {
+  min-width: 300px;
+  width: 100%;
+  background: $col-neutral-7;
+  border-radius: 16px;
+  display: none;
+
+  position: absolute;
+  bottom: 39px;
+  right: 39px;
+  z-index: -1;
+
+  .chat-header {
+    padding: 24px;
+
+    .close-chat {
+      cursor: pointer;
+    }
+
+    .turn-off-interactions {
+      font-size: 12px;
+      line-height: 16.39px;
+      color: $col-neutral-4;
+      cursor: pointer;
+    }
+
+    .small-a {
+      font-size: 12px;
+      line-height: 16.39px;
+      text-decoration: none;
+    }
+
+    .large-a {
+      font-size: 14px;
+      line-height: 19.12px;
+      text-decoration: none;
+    }
+
+    .char-name {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 30px;
+    }
+  }
+
+  .chat-iframe {
+    width: 100%;
+    height: 50vh;
+
+    iframe {
+      border-radius: 16px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-lg) {
+  .onboarding-1,
+  .onboarding-2 {
+    .modal_ctn {
+      .modal_content {
+        .h1 {
+          max-width: max-content;
+          font-size: 32px;
+          line-height: 40px;
+          margin-bottom: 16px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 24px;
+        }
+
+        .btn.btn--1 {
+          padding: 12px 32px;
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 12px;
+        }
+      }
+
+      #step2 {
+        .h1 {
+          max-width: 300px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  .onboarding-1,
+  .onboarding-2 {
+    .modal_ctn {
+      .modal_content {
+        padding: 40px 32px;
+        left: 50%;
+        top: 50%;
+        bottom: inherit;
+        transform: translate(-50%, -50%);
+        min-width: 572px;
+      }
+    }
+  }
+
+  .onboarding-2 {
+    .modal_content {
+      padding: 40px 0px !important;
+
+      .h1,
+      p {
+        padding: 0px 32px !important;
+      }
+
+      button.btn {
+        margin: 0px 32px;
+      }
+    }
+  }
+
+  .onboarding-2 {
+    .modal_ctn {
+      .modal_content {
+        left: 50%;
+        top: 50%;
+        bottom: inherit;
+        transform: translate(-50%, -50%);
+        min-width: 572px;
+
+        .image-ctn {
+          min-height: 254px;
+          max-width: 362px;
+          margin: 0 auto;
+        }
+
+        .h1 {
+          max-width: max-content !important;
+        }
+      }
+    }
+  }
+
+  .chat {
+    bottom: 75px;
+    right: 75px;
+    max-width: 387px;
+
+    .chat-iframe {
+      height: 66vh;
+      max-height: 600px;
+    }
+  }
+}
